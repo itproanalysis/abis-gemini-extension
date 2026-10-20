@@ -1,0 +1,12 @@
+{
+  "name": "abis-interior",
+  "version": "1.0.0",
+  "description": "Korean interior planning answers, style references and optional consultation contact links from ABIS.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "abis": {
+      "httpUrl": "https://abis.now/api/mcp/public",
+      "timeout": 30000
+    }
+  }
+}
