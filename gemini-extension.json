@@ -1,6 +1,6 @@
 {
   "name": "abis-interior",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Korean interior planning answers, style references and optional consultation contact links from ABIS.",
   "contextFileName": "GEMINI.md",
   "mcpServers": {

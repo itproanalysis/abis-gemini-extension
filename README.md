@@ -1,6 +1,6 @@
 # ABIS Interior for Gemini CLI
 
-Find public Korean interior planning answers, practical checklists and style references. When requested, retrieve ABIS and Dongbang Construction phone, Soomgo and callback links.
+Find public Korean interior planning answers, practical checklists and style references. When requested, retrieve ABIS and Dongbang Interior phone, Soomgo and callback links.
 
 ## Install
 
