@@ -1,6 +1,6 @@
 # ABIS Interior for Gemini CLI
 
-Find public Korean interior planning answers, practical checklists and style references. When requested, retrieve ABIS and Dongbang Interior phone, Soomgo and callback links.
+Prepare an ABIS photo-design entry with selected room/style choices, consulting proposals, PDF and automatic sharing. Read public interior planning answers and, when requested, verified consultation links.
 
 ## Install
 
@@ -15,12 +15,15 @@ For a downloaded ZIP, extract the archive and run `gemini extensions install <ex
 ## Examples
 
 - 좁은 거실의 가구 배치를 ABIS 자료로 설명하고 확인할 치수와 출처를 알려줘.
-- ABIS의 모던·내추럴·미니멀·클래식·빈티지 스타일을 비교해줘.
+- 우리 집 사진으로 인테리어 시안과 자재·조명 제안서를 만들고 싶어요.
+- 주방을 내추럴 스타일로 바꿔보고 싶어요. 사진 선택 화면으로 연결해줘.
 - 욕실 공사 전에 확인할 ABIS 체크리스트와 요청할 때 이용할 수 있는 상담 방법을 알려줘.
 
 ## Tools and limits
 
 `search_interior_answers`, `get_interior_answer`, `get_interior_styles` and `get_consultation_options` read public material only. They do not access customer data, generate paid images, place calls, submit leads or book appointments. Photos and AI photo design are separate website features. Planning guidance does not replace measured plans, structural assessments or fixed quotations. Contact and visit times must be agreed separately.
+
+For photo redesign and style-in-your-home requests, `get_interior_styles` accepts `source: "gemini"` and optional `room`/`style`; `designWorkflow.url` opens the ABIS photo-selection screen with those choices preserved. Keep automatic recommendation when the user has not chosen. The user selects one photo and requests generation on the website; the written brief is optional. Preparing this link does not upload an image or start a generation job.
 
 This extension is for **Gemini CLI**. Installing it does not list ABIS in the consumer Gemini app or enable it for every Google account. Supported Gemini app accounts can separately add the public MCP URL in Connected Apps, subject to Google's current availability and consent flow.
 
