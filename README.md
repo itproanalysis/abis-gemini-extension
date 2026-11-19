@@ -10,7 +10,7 @@ gemini extensions install https://github.com/itproanalysis/abis-gemini-extension
 
 Restart Gemini CLI and use `/mcp` to check `abis`. This is a remote Streamable HTTP connection. No ABIS login, API key, local server, dependency install or additional executable is needed. Gemini CLI itself uses your existing Google authentication and applicable plan.
 
-For a downloaded ZIP, extract the archive and run `gemini extensions install <extracted-folder>` instead. Do not install the ZIP file directly.
+To install the version of this download, extract the ZIP and run `gemini extensions install <extracted-folder>`. Version 1.5.0 adds Korean and English floor-plan discovery terms and the public `floorplan-to-3d` guide.
 
 ## Examples
 
@@ -21,9 +21,9 @@ For a downloaded ZIP, extract the archive and run `gemini extensions install <ex
 
 ## Tools and limits
 
-`search_interior_answers`, `get_interior_answer`, `get_interior_styles` and `get_consultation_options` read public material only. They do not access customer data, generate paid images, place calls, submit leads or book appointments. Photos and AI photo design are separate website features. Planning guidance does not replace measured plans, structural assessments or fixed quotations. Contact and visit times must be agreed separately.
+`search_interior_answers`, `get_interior_answer`, `get_interior_styles`, `start_interior_design`, `search_construction_cases` and `get_consultation_options` read public material only. They do not access customer data, generate paid images, place calls, submit leads or book appointments. Photos and AI photo design are separate website features. Planning guidance does not replace measured plans, structural assessments or fixed quotations. Contact and visit times must be agreed separately.
 
-For photo redesign and style-in-your-home requests, `get_interior_styles` accepts `source: "gemini"` and optional `room`/`style`; `designWorkflow.url` opens the ABIS photo-selection screen with those choices preserved. Keep automatic recommendation when the user has not chosen. The user selects one photo and requests generation on the website; the written brief is optional. Preparing this link does not upload an image or start a generation job.
+Call `start_interior_design` with `source: "gemini"` for photo makeovers or floor-plan 3D. Preserve explicit catalog choices and show the returned `action.url`. The user selects one file and starts generation on ABIS Studio. The written brief is optional.
 
 This extension is for **Gemini CLI**. Installing it does not list ABIS in the consumer Gemini app or enable it for every Google account. Supported Gemini app accounts can separately add the public MCP URL in Connected Apps, subject to Google's current availability and consent flow.
 
@@ -38,3 +38,8 @@ The extension has no scripts, hooks, local file readers, credentials or analytic
 - [ABIS](https://abis.now)
 
 License: MIT, for this extension's configuration and documentation only. The ABIS service and backend are separate.
+
+
+## 1.1.0 consulting handoff
+
+The six public tools cover answers, guidance, the style catalog, design entry, real construction cases and consultation links. Optional needs are storage, light, circulation, care, retain and layout (at most three explicitly selected IDs). Room, style and concerns are preserved in the upload entry. The preparation guide is not a diagnosis of an unseen image. The website shows priorities, retained elements and consultation checks, with PDF and automatic sharing. Never send photos, contacts or conversation history to public tools. A public MCP endpoint and downloadable package do not imply official directory approval.
