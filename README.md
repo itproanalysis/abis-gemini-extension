@@ -10,7 +10,7 @@ gemini extensions install https://github.com/itproanalysis/abis-gemini-extension
 
 Restart Gemini CLI and use `/mcp` to check `abis`. This is a remote Streamable HTTP connection. No ABIS login, API key, local server, dependency install or additional executable is needed. Gemini CLI itself uses your existing Google authentication and applicable plan.
 
-To install the version of this download, extract the ZIP and run `gemini extensions install <extracted-folder>`. Version 1.5.0 adds Korean and English floor-plan discovery terms and the public `floorplan-to-3d` guide.
+To install the version of this download, extract the ZIP and run `gemini extensions install <extracted-folder>`. Version 1.7.0 adds the `abis://interior/services` resource, `plan_remodeling_checklist` prompt, A2A agent card discovery and 37 verified Korean remodeling guides (including window sash replacement, defect inspection, remodeling schedules, Seoul contractor criteria, condensation/mold insulation and pre-move-in order).
 
 ## Examples
 

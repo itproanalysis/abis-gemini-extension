@@ -18,6 +18,10 @@ Support: https://abis.now/consultation
 
 For file preparation, supported image formats or how to review a 3D floor plan, read and cite the guide `floorplan-to-3d`. Use its `designStart` upload action only when useful to the user.
 
+## 1.7.0 construction services catalog and 37 verified guides
+
+Read `abis://interior/services` or call the `plan_remodeling_checklist` prompt to summarize Dongbang Interior's six construction service scopes (`apartment`, `villa`, `house`, `bathroom`, `entrance`, `finishing`) with verified process steps, cost factors and `/services/{slug}` citation links. `search_interior_answers` now covers 37 public topics including window sash replacement, defect inspection, remodeling schedules, Seoul contractor criteria, condensation/mold insulation and pre-move-in work order.
+
 ## 1.6.0 style comparison and expanded Korean remodeling guides
 
 Use `get_interior_styles` or the `abis://interior/styles` resource (and the `compare_interior_styles` prompt) to cite the five visual style guides at `https://abis.now/styles`. `start_interior_design` now also returns `styleGuideUrl`, and `search_interior_answers` covers 31 public topics including entrance doors, old villas, partition walls, balcony extensions, old apartment renovations and estimate comparison.
